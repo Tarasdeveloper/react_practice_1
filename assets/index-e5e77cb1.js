@@ -57,7 +57,7 @@ Error generating stack: `+i.message+`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: ${e=>e.status?"green":"aqua"};
+  background-color: ${e=>e.status?"green":"red"};
 `,nd=({isOnline:e,name:t,avatar:n})=>N.jsxs("li",{children:[N.jsx(Jm,{status:e}),N.jsx("img",{src:n,alt:t,width:"50"}),N.jsx("p",{children:t})]});nd.propTypes={avatar:Fe.string.isRequired,name:Fe.string.isRequired,isOnline:Fe.bool.isRequired};const qm=Qe.ul`
   display: flex;
 `,bm=e=>N.jsx(qm,{children:e.friends.map(t=>N.jsx(nd,{avatar:t.avatar,name:t.name,isOnline:t.isOnline},t.id))}),e0=({items:e})=>N.jsxs("table",{className:"transaction-history",children:[N.jsx("thead",{children:N.jsxs("tr",{children:[N.jsx("th",{children:"Type"}),N.jsx("th",{children:"Amount"}),N.jsx("th",{children:"Currency"})]})}),N.jsx("tbody",{children:e.map(t=>N.jsxs("tr",{children:[N.jsx("td",{children:t.type}),N.jsx("td",{children:t.amount}),N.jsx("td",{children:t.currency})]},t.id))})]}),t0=()=>N.jsxs(N.Fragment,{children:[N.jsx(td,{username:Xn.username,tag:Xn.tag,location:Xn.location,avatar:Xn.avatar,stats:Xn.stats}),N.jsx(Zm,{title:"Upload stats",stats:Ih}),N.jsx(bm,{friends:$h}),N.jsx(e0,{items:jh})]});Ki.createRoot(document.getElementById("root")).render(N.jsx(En.StrictMode,{children:N.jsx(t0,{})}));
