@@ -5,5 +5,5 @@ export const Online = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: ${(props) => (props.status ? 'green' : 'aqua')};
+  background-color: ${props => (props.status ? 'green' : 'red')};
 `;

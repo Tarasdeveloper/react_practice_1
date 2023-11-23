@@ -1,4 +1,3 @@
-import React from 'react';
 import { Online } from './FriendListItem.styled';
 import PropTypes from 'prop-types';
 
